@@ -1,0 +1,28 @@
+/*universal styles*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lobster Two";
+    text-align: center;
+}
+
+body {
+    background-image: radial-gradient(yellow, green);
+    display: grid;
+    grid-template-areas: "header header header"
+                         "subheadings subheadings subheadings"
+                         "top-left empty top-right"
+                         "empty center empty"
+                         "bottom-left empty bottom-left"
+                         "empty TT empty"
+                         "empty contact empty"
+                         "empty footer empty";
+    grid-template: 2fr 2fr 3fr 3fr 3fr 4fr 2fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+

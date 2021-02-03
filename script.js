@@ -1,4 +1,4 @@
-/*function change() {
+function change() {
     const mm = document.getElementById("mm").style.gridArea;
     const ft = document.getElementById("ft").style.gridArea;
     const ac = document.getElementById("ac").style.gridArea;
@@ -35,13 +35,15 @@
     document.getElementById("ac").style.gridArea = news[2];
     document.getElementById("tc").style.gridArea = news[3];
     document.getElementById("ex").style.gridArea = news[4];
+
+    console.log(news[0]);
 };
 
 document.getElementById("mm").onmouseover = change;
 document.getElementById("ft").onmouseover = change;
 document.getElementById("ac").onmouseover = change;
 document.getElementById("tc").onmouseover = change;
-document.getElementById("ex").onmouseover = change;*/
+document.getElementById("ex").onmouseover = change;
 
 document.getElementById("tt").onmouseover = () => document.getElementById("ttFig").style.visibility = "visible";
 document.getElementById("tt").onmouseleave = () => document.getElementById("ttFig").style.visibility = "hidden";

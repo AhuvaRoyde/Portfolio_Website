@@ -91,6 +91,10 @@ img {
     width: 45%;
 }
 
+#ttFig {
+    visibility: hidden;
+}
+
 #contact {
     /*grid-area: contact*/
     grid-area: 7 / 1 / 8 / 4;

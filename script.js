@@ -1,4 +1,4 @@
-function change() {
+/*function change() {
     const mm = document.getElementById("mm").style.gridArea;
     const ft = document.getElementById("ft").style.gridArea;
     const ac = document.getElementById("ac").style.gridArea;
@@ -20,25 +20,28 @@ function change() {
         for (i = 0; i < nums.length; i++) {
             while (nums[i] == num[i+1] || nums[i] == num[i+2] || nums[i] == num[i+3] || nums[i] == num[i+4] || nums[i] == num[i-1] || nums[i] == num[i-2] || nums[i] == num[i-3] || nums[i] == num[i-4]) {
               nums[i] = Math.floor(Math.random()*5);
-            }
-        }
+            };
+        };
         for (i = 0; i < nums.length; i++) {
             nums[i] == 0? news[i] = "3 / 1 / 4 / 2"
             :nums[i] == 1? news[i] = "3 / 3 / 4 / 4"
             :nums[i] == 2? news[i] = "4 / 2 / 5 / 3"
             :nums[i] == 3? news[i] = "5 / 1 / 6 / 2"
             :news[i] = "5 / 3 / 6 / 4";
-        }
-    }
+        };
+    };
     document.getElementById("mm").style.gridArea = news[0];
     document.getElementById("ft").style.gridArea = news[1];
     document.getElementById("ac").style.gridArea = news[2];
     document.getElementById("tc").style.gridArea = news[3];
     document.getElementById("ex").style.gridArea = news[4];
-}
+};
 
 document.getElementById("mm").onmouseover = change;
 document.getElementById("ft").onmouseover = change;
 document.getElementById("ac").onmouseover = change;
 document.getElementById("tc").onmouseover = change;
-document.getElementById("ex").onmouseover = change;
+document.getElementById("ex").onmouseover = change;*/
+
+document.getElementById("tt").onmouseover = () => document.getElementById("ttFig").style.visibility = "visible";
+document.getElementById("tt").onmouseleave = () => document.getElementById("ttFig").style.visibility = "hidden";
